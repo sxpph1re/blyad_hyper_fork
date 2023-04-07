@@ -103,9 +103,6 @@ fn new_builder(config: &Config) -> Builder {
     if let Some(opt) = config.enable_push {
         builder.enable_push(opt);
     }
-    if let Some(max) = config.max_frame_size {
-        builder.max_frame_size(max);
-    }
     if let Some(max) = config.header_table_size {
         builder.header_table_size(max);
     }
